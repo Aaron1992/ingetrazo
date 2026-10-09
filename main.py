@@ -54,6 +54,8 @@ def _init_language() -> None:
         system = QLocale.system()
         if system.language() == QLocale.Spanish:
             saved = "es"
+        elif system.language() == QLocale.German:
+            saved = "de"
         elif system.language() == QLocale.Portuguese:
             # The Brazilian Portuguese catalogue (PR #54, @dafrobozao)
             # serves every Portuguese locale until a pt-PT one exists.
